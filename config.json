@@ -2,7 +2,7 @@
     "title":"TODOMY",
     "subTitle":"生命在于体验",
     "avatarUrl":"https://github.githubassets.com/favicons/favicon.svg",
-    "GMEEK_VERSION":"last"
+    "GMEEK_VERSION":"last",
     "startSite":"11/25/2024",
     "onePageListNum":15,
     "commentLabelColor":"#006b75",
@@ -16,5 +16,5 @@
     "showPostSource":1,
     "rssSplit":"sentence",
     "bottomText":"转载请注明出处",
-    "needComment":1,
+    "needComment": true // 假设这是一个布尔值，需要一个值
 }
