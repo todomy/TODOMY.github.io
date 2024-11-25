@@ -16,5 +16,5 @@
     "showPostSource":1,
     "rssSplit":"sentence",
     "bottomText":"转载请注明出处",
-    "needComment": true // 假设这是一个布尔值，需要一个值
+    "needComment": "1",
 }
