@@ -1,5 +1,4 @@
 {
-  
     "title":"Meekdai",
     "subTitle":"童话是一种生活态度，仅此而已。",
     "homeUrl":"https://blog.meekdai.com",
@@ -19,4 +18,4 @@
     "primerCSS":"<link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />",
     "allHead":"<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekVercount.js'></script>",
     "GMEEK_VERSION":"main"
-｝
+}
