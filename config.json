@@ -2,11 +2,11 @@
     "title":"TodoMy",
     "subTitle":"人生没有绝望的处境，只有对处境绝望的人。",
     "homeUrl":"https://todomy.github.io",
-    "avatarUrl":"https://blog.meekdai.com/avatar.svg",
-    "faviconUrl":"https://blog.meekdai.com/favicon.svg",
+    "avatarUrl":"https://avatars.githubusercontent.com/u/62632079?v=4",
+    "faviconUrl":"https://avatars.githubusercontent.com/u/62632079?v=4",
     "singlePage":["link","about"],
     "email":"110@qq.com",
-    "startSite":"11/24/2022",
+    "startSite":"11/24/2024",
     "onePageListNum":15,
     "commentLabelColor":"#006b75",
     "yearColorList":["#bc4c00", "#0969da", "#1f883d", "#A333D0"],
@@ -17,5 +17,5 @@
     "exlink":{"music":"https://music.meekdai.com"},
     "primerCSS":"<link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />",
     "allHead":"<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekVercount.js'></script>",
-    "GMEEK_VERSION":"main"
+    "GMEEK_VERSION":"last"
 }
