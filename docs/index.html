@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
     <script src='https://blog.meekdai.com/Gmeek/plugins/GmeekVercount.js'></script>
-    <link rel="icon" href="https://blog.meekdai.com/favicon.svg"><script>
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/62632079?v=4"><script>
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
@@ -15,7 +15,7 @@
 <meta property="og:description" content="人生没有绝望的处境，只有对处境绝望的人。">
 <meta property="og:type" content="blog">
 <meta property="og:url" content="https://todomy.github.io">
-<meta property="og:image" content="https://blog.meekdai.com/avatar.svg">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/62632079?v=4">
 <title>TodoMy</title>
 
 </head>
@@ -29,7 +29,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <style>
 .avatar {transition: 0.8s;width:64px;height:64px;object-fit: cover;}
 .avatar:hover{transform: scale(1.15) rotate(360deg);}
-.title-left a{color:inherit;text-decoration:none;vertical-align: bottom;font-size:40px;font-weight: bold;font-family:Monaco;margin-left:8px;}
+#header h1 a{color:inherit;text-decoration:none;vertical-align: bottom;font-size:40px;font-family:Monaco;margin-left:8px;}
 .title-right{display:flex;margin:auto 0 0 auto;}
 .title-right button{margin-right:8px;padding:16px;}
 .title-right .circle{padding: 14px 16px;}
@@ -55,8 +55,8 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 
 <body>
     <div id="header">
-<div class="title-left">
-    <img src="https://blog.meekdai.com/avatar.svg" class="avatar circle" id="avatarImg" alt="avatar"><a class="blogTitle">TodoMy</a></div>
+<h1>
+    <img src="https://avatars.githubusercontent.com/u/62632079?v=4" class="avatar circle" id="avatarImg" alt="avatar"><a class="blogTitle">TodoMy</a></h1>
 <div class="title-right">
     <a href="https://todomy.github.io/tag.html" id="buttonSearch" class="btn btn-invisible circle" title="搜索">
         <svg class="octicon" width="16" height="16" >
@@ -184,8 +184,8 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 var now=new Date();
 document.getElementById("copyrightYear").innerHTML=now.getFullYear();
 
-if("11/24/2022"!=""){
-    var startSite=new Date("11/24/2022");
+if("11/24/2024"!=""){
+    var startSite=new Date("11/24/2024");
     var diff=now.getTime()-startSite.getTime();
     var diffDay=Math.floor(diff/(1000*60*60*24));
     document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
@@ -221,7 +221,7 @@ function utterancesTheme(theme){
     iframe.contentWindow.postMessage(message,'https://utteranc.es');
 }
 if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
-console.log("\n %c Gmeek main https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
 </script>
 
 <script>

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
     <script src='https://blog.meekdai.com/Gmeek/plugins/GmeekVercount.js'></script>
-    <link rel="icon" href="https://blog.meekdai.com/favicon.svg"><script>
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/62632079?v=4"><script>
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
@@ -19,7 +19,7 @@
 天地不仁，以万物为刍狗；在我看来这只是人祸导致，历史大部分的饥荒从不是粮食不够而导致的。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://todomy.github.io/post/hao-xin-tai-%2B-zhi-xing-li.html">
-<meta property="og:image" content="https://blog.meekdai.com/avatar.svg">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/62632079?v=4">
 <title>好心态+执行力</title>
 
 
@@ -61,7 +61,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
         </svg>
     </a>
     
-    <a href="https://github.com/todomy/TODOMY.github.io/issues/8" target="_blank" class="btn btn-invisible circle" title="Issue">
+    <a href="https://github.com/todomy/TodoMy.github.io/issues/8" target="_blank" class="btn btn-invisible circle" title="Issue">
         <svg class="octicon" width="16" height="16">
             <path id="pathIssue" fill-rule="evenodd"></path>
         </svg>
@@ -99,8 +99,8 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 var now=new Date();
 document.getElementById("copyrightYear").innerHTML=now.getFullYear();
 
-if("11/24/2022"!=""){
-    var startSite=new Date("11/24/2022");
+if("11/24/2024"!=""){
+    var startSite=new Date("11/24/2024");
     var diff=now.getTime()-startSite.getTime();
     var diffDay=Math.floor(diff/(1000*60*60*24));
     document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
@@ -136,7 +136,7 @@ function utterancesTheme(theme){
     iframe.contentWindow.postMessage(message,'https://utteranc.es');
 }
 if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
-console.log("\n %c Gmeek main https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
 </script>
 
 <script>
@@ -148,7 +148,6 @@ document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
 function openComments(){
     cm=document.getElementById("comments");
     cmButton=document.getElementById("cmButton");
-    cmButton.disabled=true;
     cmButton.innerHTML="loading";
     span=document.createElement("span");
     span.setAttribute("class","AnimatedEllipsis");
@@ -156,7 +155,7 @@ function openComments(){
 
     script=document.createElement("script");
     script.setAttribute("src","https://utteranc.es/client.js");
-    script.setAttribute("repo","todomy/TODOMY.github.io");
+    script.setAttribute("repo","todomy/TodoMy.github.io");
     script.setAttribute("issue-term","title");
     
     if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
