@@ -36,17 +36,15 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          # 确保 requirements.txt 文件在仓库的根目录下
           pip install -r requirements.txt
 
       - name: Generate new html
         run: |
-          # 假设 Gmeek.py 和其他相关文件都在你的仓库中
           python Gmeek.py ${{ secrets.GITHUB_TOKEN }} ${{ github.repository }} --issue_number '${{ github.event.issue.number }}'
           # 假设 docs, backup, 和 blogBase.json 都是由 Gmeek.py 生成的
-          # 如果 docs 目录已经位于工作空间中，不需要再次复制
+          # 移除了重复的 cp 命令
           # cp -a docs ${{ github.workspace }} 
-          cp -a backup ${{ github.workspace }} 
+          # cp -a backup ${{ github.workspace }} 
           cp blogBase.json ${{ github.workspace }} 
 
       - name: Update html
