@@ -41,11 +41,11 @@ jobs:
       - name: Generate new html
         run: |
           python Gmeek.py ${{ secrets.GITHUB_TOKEN }} ${{ github.repository }} --issue_number '${{ github.event.issue.number }}'
-          # 假设 docs, backup, 和 blogBase.json 都是由 Gmeek.py 生成的
+          # 假设 docs 和 blogBase.json 都是由 Gmeek.py 生成的
           # 移除了重复的 cp 命令
           # cp -a docs ${{ github.workspace }} 
           # cp -a backup ${{ github.workspace }} 
-          cp blogBase.json ${{ github.workspace }} 
+          # cp blogBase.json ${{ github.workspace }} 
 
       - name: Update html
         run: |
