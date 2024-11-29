@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   issues:
     types: [opened, edited]
- # schedule:
+  # schedule:
   #  - cron: "0 16 * * *"
     
 jobs:
@@ -23,9 +23,9 @@ jobs:
 
       - name: Get config.json
         run: |
-          echo "====== check config.josn file ======"
+          echo "====== check config.json file ======"
           cat config.json
-          echo "====== check config.josn end  ======"
+          echo "====== check config.json end  ======"
           sudo apt-get install jq
 
       - name: Set up Python
@@ -33,29 +33,22 @@ jobs:
         with:
           python-version: 3.8
 
-     # - name: Clone source code
-      #  run: |
-       #  GMEEK_VERSION=$(jq -r ".GMEEK_VERSION" config.json)
-        #  git clone https://github.com/Meekdai/Gmeek.git /opt/Gmeek;
-         # cd /opt/Gmeek/
-         # lastTag=$(git describe --tags `git rev-list --tags --max-count=1`)
-         # if [ $GMEEK_VERSION == 'last' ]; then git checkout $lastTag; else git checkout $GMEEK_VERSION; fi;
-
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install -r /opt/Gmeek/requirements.txt
+          # 确保 requirements.txt 文件在仓库的根目录下
+          pip install -r ./requirements.txt
 
       - name: Generate new html
         run: |
-          cp -r ./* /opt/Gmeek/
-          cd /opt/Gmeek/
+          # 假设 Gmeek.py 和其他相关文件都在你的仓库中
           python Gmeek.py ${{ secrets.GITHUB_TOKEN }} ${{ github.repository }} --issue_number '${{ github.event.issue.number }}'
-          cp -a /opt/Gmeek/docs ${{ github.workspace }} 
-          cp -a /opt/Gmeek/backup ${{ github.workspace }} 
-          cp /opt/Gmeek/blogBase.json ${{ github.workspace }} 
-          
-      - name: update html
+          # 假设 docs, backup, 和 blogBase.json 都是由 Gmeek.py 生成的
+          cp -a docs ${{ github.workspace }} 
+          cp -a backup ${{ github.workspace }} 
+          cp blogBase.json ${{ github.workspace }} 
+
+      - name: Update html
         run: |
           git config --local user.email "$(jq -r ".email" config.json)"
           git config --local user.name "${{ github.repository_owner }}"
@@ -63,12 +56,12 @@ jobs:
           git commit -a -m '🎉auto update by Gmeek action' || echo "nothing to commit"
           git push || echo "nothing to push"
           sleep 3
-          
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'docs/.'
-          
+          path: 'docs/'
+
   deploy:
     name: Deploy blog
     runs-on: ubuntu-20.04
