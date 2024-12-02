@@ -5,7 +5,7 @@ on:  # 指定触发工作流的事件
   issues:  # 当有新的issue或issue被编辑时
     types: [opened, edited]  # 指定触发事件的类型
     schedule:  # 计划任务
-    - cron: "0 16 * * *"  # 每天的16:00 UTC时间触发
+    - cron: "0 24 * * *"  # 每天的24:00 UTC时间触发
 
 jobs:  # 定义工作流中的工作（jobs）
   build:  # 定义名为“build”的工作
