@@ -1,12 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TodoMy</title><link>https://todomy.github.io</link><description>人生没有绝望的处境，只有对处境绝望的人。</description><copyright>TodoMy</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/62632079?v=4</url><title>avatar</title><link>https://todomy.github.io</link></image><lastBuildDate>Wed, 11 Dec 2024 10:28:29 +0000</lastBuildDate><managingEditor>TodoMy</managingEditor><ttl>60</ttl><webMaster>TodoMy</webMaster><item><title>语言的艺术</title><link>https://todomy.github.io/post/yu-yan-de-yi-shu.html</link><description>&gt; [!TIP]&#13;
-&gt;你是什么样的人是你告诉他们的。</description><guid isPermaLink="true">https://todomy.github.io/post/yu-yan-de-yi-shu.html</guid><pubDate>Wed, 11 Dec 2024 08:35:01 +0000</pubDate></item><item><title>我的存储方案</title><link>https://todomy.github.io/post/wo-de-cun-chu-fang-an.html</link><description>&lt;div class='tip'&gt;&#13;
-  &lt;strong&gt;Tip:&lt;/strong&gt; 每个人都丢失过数据，如何存储数据？&#13;
-&lt;/div&gt;&#13;
-&#13;
----&#13;
-&#13;
-&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TodoMy</title><link>https://todomy.github.io</link><description>人生没有绝望的处境，只有对处境绝望的人。</description><copyright>TodoMy</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/62632079?v=4</url><title>avatar</title><link>https://todomy.github.io</link></image><lastBuildDate>Wed, 11 Dec 2024 10:32:35 +0000</lastBuildDate><managingEditor>TodoMy</managingEditor><ttl>60</ttl><webMaster>TodoMy</webMaster><item><title>语言的艺术</title><link>https://todomy.github.io/post/yu-yan-de-yi-shu.html</link><description>&gt; [!TIP]&#13;
+&gt;你是什么样的人是你告诉他们的。</description><guid isPermaLink="true">https://todomy.github.io/post/yu-yan-de-yi-shu.html</guid><pubDate>Wed, 11 Dec 2024 08:35:01 +0000</pubDate></item><item><title>我的存储方案</title><link>https://todomy.github.io/post/wo-de-cun-chu-fang-an.html</link><description>&gt; [!TIP]&#13;
+&gt; 每个人都丢失过数据，如何存储数据？&#13;
 ### 本地存储&#13;
 &#13;
 之前用手机电脑直接存储数据，这种方案裸奔，但是使用起来比较方便，设备坏了数据丢失，这也是大部分人采取的方式&#13;
